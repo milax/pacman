@@ -1,0 +1,238 @@
+/*
+
+    Project: Project name
+    Master screen styles
+
+    Author: Author / www.site.com
+    Copyright: 2012, Author. All rights resevered
+
+-----------------------------------------------------------------------*/
+
+body
+{
+    font: normal 13px/1.4 Arial, Verdana, Tahoma, Sans-Serif;
+    color: #000;
+    text-align: center;
+    background: #fff;
+    -webkit-transform: translate3d(0,0,0) translateZ(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 150px;
+}
+
+/* ==========================================================================
+   Clearings
+   ========================================================================== */
+.clearfix:before,
+.clearfix:after
+{
+    content: "";
+    display: table;
+}
+.clearfix:after
+{
+    clear: both;
+}
+.clear
+{
+    clear: both;
+    height: 0;
+}
+
+
+/* ==========================================================================
+   Accessibility & SEO
+   ========================================================================== */
+.accessibility
+{
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+} 
+
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+hr
+{
+    height: 1px;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #dddcd6;
+    background-color: #dddcd6;
+    border: 0;
+}
+blockquote
+{
+    font-style: italic;
+}
+ul
+{
+    margin: 0 0 15px;
+    padding: 0 0 0 15px;
+    list-style-type: square;
+}
+dl
+{
+    margin: 0 0 15px;
+    }
+    dl dt
+    {
+        font-weight: bold;
+    }
+    dl dd 
+    {
+        margin: 0 0 0 15px;
+    }
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Headings
+   ========================================================================== */
+h1
+{
+}
+h2
+{
+}
+h3
+{
+}
+h4
+{
+}
+p
+{
+    margin: 0 0 15px;
+}
+
+/* Links
+   ========================================================================== */
+a
+{
+    color: #92939b;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: #252737;
+}
+a:focus,
+a:active
+{
+    color: #252737;
+    text-decoration: none;
+}
+
+/* Image + image link border
+   ========================================================================== */
+img
+{
+    display: block;
+}
+a img
+{
+    border: 0;
+}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+fieldset
+{
+    display: block;
+    border: 0;
+}
+legend
+{
+    display: none;
+}
+
+
+/* ==========================================================================
+   Main layout
+   ========================================================================== */
+#field
+{
+    background: blue;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto 0;
+    position: relative;
+  }
+  #field .point
+  {
+      position: absolute;
+      background-color: red;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+  }
+#pacman
+{
+    display: none;
+    width: 35px;
+    height: 35px;
+     z-index: 100;
+    position: absolute;
+
+    -webkit-transition: all 0.2s linear;
+    }
+    #pacman .body
+    {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        background-image: url(../gfx/pacman.gif);
+        -webkit-transition: all 0s linear;
+    }
+    #pacman.died .body
+    {
+        background-image: url(../gfx/pacman-died.png);
+    }
+
+.enemy
+{
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../gfx/enemy_04.png);
+    position: absolute;
+    -webkit-transition: all 0.3s linear;
+}
+
+.coins
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../gfx/coins.png) 0 50% no-repeat;
+    line-height: 64px;
+    font-size: 20px;
+    height: 64px;
+    width: 150px;
+    padding-left: 60px;
+}
+
+
+.buttons
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    }
+    .buttons .btn
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }

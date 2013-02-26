@@ -1,0 +1,14 @@
+/*
+
+    Project: Project name
+    IE patches
+
+    Author: Author / www.site.com
+    Copyright: 2012, Author. All rights resevered
+
+-----------------------------------------------------------------------*/
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom: 1; }
+
+.ie6 body hr { margin: 1px 0; } /* Remove the progressive spacing in IE */
